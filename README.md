@@ -14,13 +14,14 @@ This problem aims to automate the extraction and classification of key clauses a
 **3.	Data Acquisition**: Data is acquired from 350 different datasets from Kaggle. These 350 separate legal documents contain 350+ different legal clauses and 150,000 total examples. All the 350 datasets are combined to build classification models and anomaly detection. Due to significant processing time, only 5% of the dataset was used to train and test the model that included more than 7,000 records.
 
 **4.	Data Preprocessing/Preparation**: 
-a) Preprocessing: Steps taken for text preprocessing:
+
+**a) Preprocessing**: Steps taken for text preprocessing:
   - Tokenization: Splitting text into tokens using NLTK.
   - Stopword Removal: Filtering out common words like "the", "and", etc.
   - Stemming: Reducing words to their base forms using PorterStemmer.
   - Lemmatization: Further normalization for meaningful word forms.
 
-b) Feature Extraction: TF-IDF Vectorization:
+**b) Feature Extraction**: TF-IDF Vectorization:
   - Transformed processed text into numerical features.
   - Limited to the top 5,000 features to balance model complexity and performance.
   - Train-Test Split: (Training Data: 80% and Test Data: 20%)
